@@ -1,0 +1,16 @@
+[package]
+name = "zk-merkle-tree"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+ark-ff = { version = "^0.4.1", default-features = false }
+ark-groth16 = { version = "^0.4.0", default-features = false }
+ark-std = { version = "^0.4.0", features = ["parallel"]}
+ark-relations = { version = "^0.4.0", default-features = false }
+ark-r1cs-std = { version = "^0.4.0", default-features = false }
+ark-bls12-381 = { version = "^0.4.0", default-features = false, features = ["curve"] }
+ark-crypto-primitives = { version = "0.4.0", features = ["r1cs", "crh", "merkle_tree"] }
+ark-serialize = "0.4.1"
+hex = { version = "0.4", default-features = false }
+fastcrypto-zkp = { git = "https://github.com/MystenLabs/fastcrypto", rev = "a64749a411139e806d7b2b8cf9c59c72c019d690", package = "fastcrypto-zkp" }
